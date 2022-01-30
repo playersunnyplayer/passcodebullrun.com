@@ -258,7 +258,7 @@ $("#download-now").validate({
                     $("#block").html(data);
                     $("#download-now")[0].reset();
                      $("#answer5").show();
-                    $("#answer5").html('Thanks for contacting us we will reach you shortly');
+                    $("#answer5").html('Thanks for downloading the Ebrochure.');
                 }
              });
              return false; // required to block normal submit since you used ajax

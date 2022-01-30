@@ -106,7 +106,6 @@
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
             <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
@@ -350,7 +349,7 @@
                                 </tr>
                                 <tr>
                                     <td>Office</td>
-                                    <td>1129</td>
+                                    <td>1229</td>
                                     <td>
                                         <a href="javascript:void (0);" class="price-click">
                                             Click Here
@@ -449,7 +448,7 @@
                             data-aos-delay="200" data-aos-duration="1000">
                             <div class="bo">
                                 <figure>
-                                    <img src="assets/images/icons/amenties/rooftop.png" alt="" />
+                                    <img src="assets/images/icons/amenties/self-sustain-offices.png" alt="" />
                                 </figure>
                                 <p>Self Sustain Offices</p>
                             </div>
@@ -854,7 +853,7 @@
                             </figure>
                             <div>
                                 <p><b>Networking & Recreation:</b></p>
-                                <p>Goregaon Sports club - 750 m</p>
+                                <p>Goregaon Sports Club - 750 m</p>
                                 <p>Sarovar Grand Hometel - 450 m</p>
                             </div>
                         </div>
@@ -864,8 +863,8 @@
                             </figure>
                             <div>
                                 <p><b>Healthcare:</b></p>
-                                <p> Diamond Hospital - 1.7 km</p>
-                                <p> evershine nursing home - 2.2 km</p>
+                                <p>Diamond Hospital - 1.7 km</p>
+                                <p>Evershine Nursing Home - 2.2 km</p>
                                 <p>Zenith Multispeciality Hospital - 2.1 km</p>
                             </div>
                         </div>
@@ -1212,7 +1211,7 @@
 
                     <h2>Site Address:</h2>
                     <p>
-                        Passcode Bull Run, Off Link road , Behind Evershine Mall, Mindscpace , Malad (W), Mumbai, 400064.
+                        Passcode Bull Run, Off Link Road, Behind Evershine Mall, Mindspace, Malad (W), Mumbai, 400064.
                     </p>
                     <h2>MahaRERA No. P51800025299</h2>
                     <p>
@@ -1264,7 +1263,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                     <h3>Enquire Now</h3>
-                    <p>Please Enter Your Details To Know About Passcode Bull Run</p>
+                    <p>Please Enter Your Details To Download EBrochure</p>
                     <form id="main-popup" action="" name="main-popup" method="POST" >
                         <div class="form-group col-md-12">
                             <div class="input-group">
@@ -1372,7 +1371,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                     <h3>Enquire Now</h3>
-                    <p>Please Enter Your Details To Know About Passcode Bull Run</p>
+                    <p>Kindly take a moment to fill up this form, Our representative will connect you shortly</p>
                     <form id="enquire-now" action="" name="enquire-now" method="POST" >
                         <div class="form-group col-md-12">
                             <div class="input-group">
@@ -1422,7 +1421,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                     <h3 id="modaltittle"></h3>
-                    <p>Please Enter Your Details To Know About Passcode Bull Run</p>
+                    <p>Please Enter Your Details To Download EBrochure</p>
                     <form id="download-now" action="" name="download-now" method="POST" >
                         <div class="form-group col-md-12">
                             <div class="input-group">
@@ -1531,6 +1530,7 @@
 
             $(".interested").click(function () {
                 $('#interested').modal('show');
+                $('#answer4').hide();
             });
 
             $(".i-am").click(function () {
@@ -1540,6 +1540,7 @@
             $(".broucher-click").click(function () {
                 $('#modaltittle').html('Download e-Brochure');
                 $('#download-modal').modal('show');
+                $('#answer5').hide();
             });
 
             $(".unitclick").click(function () {
@@ -1581,6 +1582,13 @@
             }
         });
     </script>
+    <script>
+    var pdfUrl = "assets/pdf/Bull_Run_Opp_Doc_7_JAN_2022_Blue.pdf";
+
+    $('#download-now').on('submit', function () {
+        window.open(pdfUrl, '_blank');
+    });
+</script>
 </body>
 
 </html>
