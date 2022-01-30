@@ -80,7 +80,7 @@
     min-height: initial;
   }
   .rera-wrap {
-    text-align: left;
+  margin: 0 0 30px;
   }
   .rera-wrap h2 {
     font-size: 19px;

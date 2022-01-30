@@ -284,45 +284,6 @@ body {
 
 /*-------------------*/
 
-@media (max-width: 767px) {
-  .navbar-nav {
-    margin: initial !important;
-  }
-  .br__navbar-header {
-    width: 100%;
-  }
-  .carousel-inner > .item > a > img,
-  .carousel-inner > .item > img {
-    width: 100%;
-  }
-  .navbar-collapse {
-    padding-bottom: 10px;
-  }
-  .navbar-brand > img {
-    width: 100px;
-    float: left;
-    margin-top: 10px;
-    margin-left: 15px;
-  }
-  .navbar-default .navbar-nav > li > a {
-    margin: 0;
-  }
-  .navbar-brand > img.br__nav-logo {
-    width: 145px;
-    margin-top: 12px;
-  }
-  .navbar-brand {
-    padding: 0px;
-  }
-  .navbar-default .navbar-toggle {
-    border: none !important;
-    background: #ab1f25;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: #ffffff !important;
-  }
-}
-
 .nav-call {
   border: 2px solid #158140;
   border-radius: 7px;
@@ -459,6 +420,14 @@ body {
 
 .wrap-section {
   width: 100%;
+}
+
+.contactusWrap {
+  padding: 0 !important;
+}
+
+.contactusWrap iframe {
+  min-height: 100%;
 }
 
 .cover-img img {
@@ -653,6 +622,7 @@ body {
 .config-table tr td {
   vertical-align: middle !important;
   padding: 11px 5px !important;
+  border-right: solid 1px #ddd;
 }
 
 .config-table thead {
@@ -1414,7 +1384,7 @@ label.error {
 
 .btnWrap360 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .btnWrap360 .btn {
@@ -1649,6 +1619,10 @@ label.error {
   float: right;
   position: relative;
   top: -5px;
+}
+
+.onlyMobile {
+  display: none;
 }
 
 .loc-icon {
@@ -1965,11 +1939,24 @@ label.error {
 }
 
 .mapWrap {
-  max-height: 350px;
+  max-height: 280px;
 }
 
 .mapWrap img {
   width: 100% !important;
+}
+
+.footerDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 20px;
+}
+
+.footerLogoLeft,
+.footerLogoRight {
+  height: 120px;
+  padding: 0 40px;
 }
 
 @media all and (transform-3d), (-webkit-transform-3d) {
@@ -1995,4 +1982,69 @@ label.error {
 }
 .carousel-fade .carousel-control.left {
   text-align: left;
+}
+
+.contactusWrap_row {
+  display: flex;
+}
+
+.contactusWrap_form {
+  padding: 50px 0;
+}
+
+@media (max-width: 767px) {
+  .onlyMobile {
+    display: block;
+  }
+  .getBrochureBtn {
+    display: table;
+    margin: 40px auto 0;
+  }
+  .navbar-nav {
+    margin: initial !important;
+  }
+  .br__navbar-header {
+    width: 100%;
+  }
+  .carousel-inner > .item > a > img,
+  .carousel-inner > .item > img {
+    width: 100%;
+  }
+  .navbar-collapse {
+    padding-bottom: 10px;
+  }
+  .navbar-brand > img {
+    width: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    margin: 0;
+  }
+  .navbar-brand > img.br__nav-logo {
+    width: 145px;
+    margin-top: 12px;
+  }
+  .navbar-brand {
+    padding: 0px;
+  }
+  .navbar-default .navbar-toggle {
+    border: none !important;
+    background: #ab1f25;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff !important;
+  }
+  .contactusWrap_row {
+    flex-direction: column;
+  }
+  .contactusWrap_row iframe {
+    height: 400px;
+    margin: 60px 0 0;
+  }
+  .footerDetails {
+  flex-direction: column;
+  padding: 0 20px;
+  }
 }
