@@ -1,3 +1,10 @@
+<?php
+	if (isset($_GET['utm_source'])){
+	    $utm_source=$_GET['utm_source'];
+	    $utm_medium=$_GET['utm_medium'];
+	    $utm_content=$_GET['utm_content'];
+	}
+?>
 <!Doctype html>
 <html lang="en">
 
@@ -8,6 +15,30 @@
     <title>Passcode Bull Run</title>
     <link rel="icon" type="image/png" href="assets/images/poplogo.png" />
     <meta name="description" content="">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B38BESHXWM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-B38BESHXWM');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N47CDC5');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N47CDC5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Bootstrap CSS -->
     <!-- Latest compiled and minified bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -95,27 +126,24 @@
             <a class="close-menu m-link" href="#contactus">Contact Us</a>
         </div>
     </div>
-    <div class="arrow-up logo-wrapper">
+    <!-- <div class="arrow-up logo-wrapper">
         <a href="#header" class="m-link visible-xs new-int">
             <img data-event-category="header" data-event-action="click" data-event-name="logo"
                 src="assets/images/up-arrow.png" class="img-responsive" />
         </a>
-    </div>
+    </div> -->
     <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
             <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
         </ol>
-        <div class="carousel-inner" role="listbox">
+        <!-- <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="assets/images/slider/slide-1.jpg" alt="" class="hidden-xs" />
                 <img src="assets/images/slider/mobile-1.jpg" alt="" class="visible-xs" />
             </div>
-            <!-- <div class="item">
-                <img src="assets/images/slider/slide-2.jpg" alt="" class="hidden-xs" />
-                <img src="assets/images/slider/mobile-2.jpg" alt="" class="visible-xs" />
-            </div> -->
             <div class="item">
                 <img src="assets/images/slider/slide-3.jpg" alt="" class="hidden-xs" />
                 <img src="assets/images/slider/mobile-3.jpg" alt="" class="visible-xs" />
@@ -123,6 +151,42 @@
             <div class="item">
                 <img src="assets/images/slider/slide-4.jpg" alt="" class="hidden-xs" />
                 <img src="assets/images/slider/mobile-4.jpg" alt="" class="visible-xs" />
+            </div>
+        </div> -->
+        <div class="carousel-inner" role="listbox">
+            <!-- <div class="item active">
+                <img src="assets/images/slider/pre-teaser-1.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img src="assets/images/slider/pre-teaser-2.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img src="assets/images/slider/pre-teaser-3.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img src="assets/images/slider/teaser-1.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img src="assets/images/slider/teaser-2.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img src="assets/images/slider/teaser-3.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img src="assets/images/slider/teaser-4.jpg" alt="" />
+            </div> -->
+            
+            <div class="item active">
+                <img src="assets/images/slider/pre-teaser-4.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img src="assets/images/slider/pre-teaser-5.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img src="assets/images/slider/pre-teaser-6.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img src="assets/images/slider/pre-teaser-7.jpg" alt="" />
             </div>
         </div>
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -903,6 +967,23 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="row mr0">
+                            <div class="col-md-6">
+                                <div class="btnWrap360">
+                                     <a href="https://passcodebullrun.com/360-view"  target="_blank" class="btn btn-primary view">360 Degree View</a>
+                                     <!-- <a href="#" class="btn btn-primary">360 Deg</a> -->
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="btnWrap360">
+                                    <a href="#" class="btn btn-primary view getLocationBtn">Location Tour</a>
+                                    <!-- <a href="#" class="btn btn-primary">360 Deg</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
                         <div class="btnWrap360">
                             <a href="#" class="btn btn-primary getDirectionBtn">Get Directions</a>
                             <!-- <a href="#" class="btn btn-primary">360 Deg</a> -->
@@ -928,6 +1009,7 @@
                             <div>
                                 <img class="builder-logo" src="assets/images/veena-logo.svg">
                                 <div>
+                                   
                                     <div class="owl-carousel owl-theme view-carousel">
                                         <div class="item">
                                             <div class="boxes">
@@ -1035,7 +1117,8 @@
                         <div class="builder-cover">
                             <div>
                                 <img class="builder-logo" src="assets/images/veena-logo.svg">
-                                <div class="row br__icon-wrapper">
+                                <p>Founded in the year 1990, Veena Developers has become a name synonymous with honesty, integrity, transparency, and trust. With 31 years of experience, Veena Developers has come a long way in delivering projects spread across approximately 47,50,000 sq. ft into residential, commercial, and industrial developments. 5300+ happy customers and 30+ completed projects are a part of our success. </p>
+                                <!-- <div class="row br__icon-wrapper">
                                     <div class="col-md-12">
                                         <div class="row">
                                             <div class="col-md-6">
@@ -1088,7 +1171,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -1096,7 +1179,8 @@
                         <div class="builder-cover">
                             <div>
                                 <img class="builder-logo" src="assets/images/Bhoomi-Logo.png">
-                                <div class="row br__icon-wrapper">
+                                <p>Since its foundation in 1993, Bhoomi Group has been creating values in people’s lives by delivering happiness. With over 27 years of propelling experience in the construction industry, we have created our own benchmarks with the upgrading times in terms of creating the ideal blend of innovation and experience making us one of the leading builders today. </p>
+                                <!-- <div class="row br__icon-wrapper">
 
                                     <div class="col-md-12">
                                         <div class="row">
@@ -1153,7 +1237,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -1181,8 +1265,11 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-user form-ico" aria-hidden="true"></i>
                                     </div>
-                                    <input type="text" class="form-control" name="fname" placeholder="Full Name">
-                                    <input type="hidden" name="source" value="Contact Form">
+                                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Full Name">
+                                    <input type="hidden" name="source" value="Contact Form" id="source">
+                                     <input type="hidden" name="utm_source" id="utm_source"  value="<?php echo $utm_source;?>">
+                                      <input type="hidden" name="utm_content" id="utm_content" value="<?php echo $utm_content;?>">
+                                       <input type="hidden" name="utm_medium" id="utm_medium" value="<?php echo $utm_medium;?>">
                                 </div>
                                 <label for="fname" class="error"></label>
                             </div>
@@ -1191,7 +1278,7 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-mobile form-ico" aria-hidden="true"></i>
                                     </div>
-                                    <input type="text" class="form-control" name="mobile" placeholder="Mobile">
+                                    <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile">
                                 </div>
                                 <label for="mobile" class="error"></label>
                             </div>
@@ -1200,7 +1287,7 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-envelope" aria-hidden="true"></i>
                                     </div>
-                                    <input type="email" class="form-control" name="email" placeholder="Email">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                                 </div>
                                 <label for="email" class="error"></label>
                             </div>
@@ -1228,7 +1315,7 @@
                     <p>
                         Passcode Bull Run, Off Link Road, Behind Evershine Mall, Mindspace, Malad (W), Mumbai, 400064.
                     </p>
-                    <h2>MahaRERA No. P51800025299</h2>
+                    <h2>MahaRERA No. P51800032829</h2>
                     <p>
                         Details Available at https://maharera.mahaonline.gov.in
                     </p>
@@ -1249,7 +1336,7 @@
         <div class="container">
             <p>
                 <span>Disclaimer:</span>
-                Passcode Bullrun is the marketing campaign name of 9, BusinessBay and had been registered via MahaRERA Registration No: xxxxxxxxxxxxxx . Available on the website http://maharera.mahaonline.gov.in.
+                Passcode Bullrun is the marketing campaign name of 9, BusinessBay and had been registered via MahaRERA Registration No: P51800032829. Available on the website http://maharera.mahaonline.gov.in.
                 The information provided included all pictures, visuals, perspective views of the building, and amenities are as per architectural drawings and the same shall be constructed subject to approvals of competent authorities and shall be in compliance with RERA Act and Rules and Regulations. Furniture, fixtures are shown in the pictures, and images of the office are for representation purposes only and actual offices will be the bare shell. *T&C apply.
             </p>
         </div>
@@ -1285,6 +1372,9 @@
                                 </div>
                                 <input type="text" class="form-control" name="fname" placeholder="Name">
                                 <input type="hidden" name="source" value="Main PopUp">
+                                 <input type="hidden" name="utm_source" value="<?php echo $utm_source;?>">
+                                      <input type="hidden" name="utm_content" value="<?php echo $utm_content;?>">
+                                       <input type="hidden" name="utm_medium" value="<?php echo $utm_medium;?>">
                             </div>
                             <label for="fname" class="error"></label>
                         </div>
@@ -1327,14 +1417,17 @@
                     </button>
                     <h3>Floor Plans</h3>
                     <p>Please Enter Your Details To Floor Plans</p>
-                    <form id="main-popup" action="" name="main-popup" method="POST" >
+                    <form id="floor-popup1" action="" name="floor-popup1" method="POST">
                         <div class="form-group col-md-12">
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-user form-ico" aria-hidden="true"></i>
                                 </div>
                                 <input type="text" class="form-control" name="fname" placeholder="Name">
-                                <input type="hidden" name="source" value="Main PopUp">
+                                <input type="hidden" name="source" value="Floor Plans">
+                                 <input type="hidden" name="utm_source" value="<?php echo $utm_source;?>">
+                                      <input type="hidden" name="utm_content" value="<?php echo $utm_content;?>">
+                                       <input type="hidden" name="utm_medium" value="<?php echo $utm_medium;?>">
                             </div>
                             <label for="fname" class="error"></label>
                         </div>
@@ -1356,7 +1449,7 @@
                             </div>
                             <label for="email" class="error"></label>
                         </div>
-                           <div id="answer2" style="    color: green;
+                           <div id="answer10" style="    color: green;
     margin-bottom: 20px;
     text-align: center;
     font-weight: 600;display:none;" ></div>
@@ -1377,14 +1470,17 @@
                     </button>
                     <h3>Get Direction</h3>
                     <p>Please Enter Your Details To Get Direction</p>
-                    <form id="main-popup" action="" name="main-popup" method="POST" >
+                    <form id="get-popup" action="" name="get-popup" method="POST" >
                         <div class="form-group col-md-12">
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-user form-ico" aria-hidden="true"></i>
                                 </div>
                                 <input type="text" class="form-control" name="fname" placeholder="Name">
-                                <input type="hidden" name="source" value="Main PopUp">
+                                <input type="hidden" name="source" value="Get Direction">
+                                 <input type="hidden" name="utm_source" value="<?php echo $utm_source;?>">
+                                      <input type="hidden" name="utm_content" value="<?php echo $utm_content;?>">
+                                       <input type="hidden" name="utm_medium" value="<?php echo $utm_medium;?>">
                             </div>
                             <label for="fname" class="error"></label>
                         </div>
@@ -1397,9 +1493,24 @@
                             </div>
                             <label for="mobile" class="error"></label>
                         </div>
+                        <div id="answer7" style="    color: green;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;display:none;" ></div>
                         <button type="submit" class="btn btn-default popup-btn">SUBMIT</button>
                     </form>
                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade in" tabindex="-1" role="dialog" id="getLocationModel" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <iframe src="https://www.youtube.com/embed/exQa6Lc43Mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -1424,6 +1535,9 @@
                                 </div>
                                 <input type="text" class="form-control" name="fname" placeholder="Name">
                                 <input type="hidden" name="source" value="Price PopUp">
+                                 <input type="hidden" name="utm_source" value="<?php echo $utm_source;?>">
+                                      <input type="hidden" name="utm_content" value="<?php echo $utm_content;?>">
+                                       <input type="hidden" name="utm_medium" value="<?php echo $utm_medium;?>">
                             </div>
                             <label for="fname" class="error"></label>
                         </div>
@@ -1472,7 +1586,7 @@
                     </button>
                     <h3>Enquire Now</h3>
                     <p>Kindly take a moment to fill up this form, Our representative will connect you shortly</p>
-                    <form id="enquire-now" action="" name="enquire-now" method="POST" >
+                    <form id="enquire-now" action="" name="enquire-now" method="post" >
                         <div class="form-group col-md-12">
                             <div class="input-group">
                                 <div class="input-group-addon">
@@ -1480,6 +1594,9 @@
                                 </div>
                                 <input type="text" class="form-control" name="fname" placeholder="Name">
                                 <input type="hidden" name="source" value="Enquire Now">
+                                 <input type="hidden" name="utm_source" value="<?php echo $utm_source;?>">
+                                      <input type="hidden" name="utm_content" value="<?php echo $utm_content;?>">
+                                       <input type="hidden" name="utm_medium" value="<?php echo $utm_medium;?>">
                             </div>
                             <label for="fname" class="error"></label>
                         </div>
@@ -1530,6 +1647,9 @@
                                 </div>
                                 <input type="text" class="form-control" name="fname" placeholder="Name">
                                 <input type="hidden" name="source" value="Download Brochure">
+                                 <input type="hidden" name="utm_source" value="<?php echo $utm_source;?>">
+                                      <input type="hidden" name="utm_content" value="<?php echo $utm_content;?>">
+                                       <input type="hidden" name="utm_medium" value="<?php echo $utm_medium;?>">
                             </div>
                             <label for="fname" class="error"></label>
                         </div>
@@ -1579,43 +1699,7 @@
     <script src="assets/js/cookie.js"></script>
     <script src="assets/js/popup.js"></script>
     <script src="assets/js/custome-js.js"></script>
-<script>
-  function validateForm()
-{
-    var a=document.forms["Form"]["fname"].value;
-    var b=document.forms["Form"]["mobile"].value;
-    var c=document.forms["Form"]["lastname"].value;
-    if (a==null || a=="",b==null || b=="",c==null || c=="",d==null || d=="")
-    {
-        alert("Please Fill All Required Field");
-        return false;
-    }
-    else{
 
-        $.ajax({
-        type: 'post',
-        url: 'add.php',
-        data: $('form').serialize(),
-        success: function () {
-          alert('Patient added');
-          document.getElementById("form").reset();
-        }
-      });
-
-    }
-}
-
-  $(function () {
-
-    $('form').on('submit', function (e) {
-      e.preventDefault();
-
-      validateForm();
-
-
-    });
-  });
-</script>
     <script>
         AOS.init({
             easing: 'ease-out-back'
@@ -1661,6 +1745,11 @@
             $(".getDirectionBtn").click(function () {
                 $('#modaltittle').html('Get Direction');
                 $('#getDirectionModel').modal('show');
+            });
+
+            $(".getLocationBtn").click(function () {
+                $('#modaltittle').html('Get Location');
+                $('#getLocationModel').modal('show');
             });
         });
     </script>
